@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { background: #0B0B0B; scroll-behavior: smooth; }
+body { @apply bg-obsidian text-bone font-sans antialiased; }
+::selection { background: #B3122B; color: #F5F5F5; }
+:focus-visible { outline: 2px solid #C8A24A; outline-offset: 2px; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm tracking-wide transition-colors disabled:opacity-40 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-bone text-obsidian hover:bg-gold; }
+  .btn-crimson { @apply btn bg-crimson text-bone hover:bg-red-700; }
+  .btn-ghost { @apply btn border border-platinum text-bone hover:border-bone; }
+  .field { @apply w-full bg-coal border border-platinum px-3 py-2.5 text-sm text-bone placeholder:text-ash focus:border-gold focus:outline-none; }
+  .label { @apply block text-xs text-ash mb-1.5; }
+  .badge { @apply inline-block bg-obsidian/90 border border-platinum px-2 py-0.5 text-[11px] text-bone; }
+  .th { @apply px-3 py-2 text-left text-xs font-normal text-ash border-b border-platinum; }
+  .td { @apply px-3 py-3 text-sm border-b border-platinum/60; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

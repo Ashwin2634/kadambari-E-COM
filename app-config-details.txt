@@ -1,0 +1,21 @@
+mongo db -
+login email - ashwintm2027@gmail.com
+
+Username - ashwintm2027_db_user
+Password - INRkOVY9WxaBGWTW
+cconn url - mongodb+srv://<db_username>:INRkOVY9WxaBGWTW@ecom.k5lzr3y.mongodb.net/
+
+
+cloudnerry -
+login email - ashwintm2027@gmail.com
+
+CLOUDINARY_CLOUD_NAME=bwyfe3hn
+CLOUDINARY_API_KEY=576969816457663
+CLOUDINARY_API_SECRET=UlrGvS0Wr0S99dXEpc7j0e_nZVM
+
+CLOUDINARY_URL=cloudinary://<your_api_key>:<your_api_secret>@bwyfe3hn
+
+
+
+
+Admin login: admin@obsidian.test / Ashwin@0987
