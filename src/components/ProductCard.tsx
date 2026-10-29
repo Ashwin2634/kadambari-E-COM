@@ -8,6 +8,8 @@ import { useCart } from "@/store/cart";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export default function ProductCard({ p, priority = false }: { p: any; priority?: boolean }) {
   const [picker, setPicker] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
   const add = useCart((s) => s.add);
   const cover = p.images.find((i: any) => i.isCover) ?? p.images[0];
   const alt = p.images.find((i: any) => i !== cover);
@@ -28,10 +30,33 @@ export default function ProductCard({ p, priority = false }: { p: any; priority?
   };
 
   return (
-    <article className="group relative bg-coal border border-platinum" onMouseLeave={() => setPicker(false)}>
-      <Link href={`/product/${p.slug}`} className="block relative aspect-[3/4] overflow-hidden bg-platinum">
-        {cover && <Image src={cld(cover.url, 700)} alt={cover.altText || p.title} fill priority={priority} sizes="(max-width:768px) 50vw, 25vw" className={`object-cover transition-opacity duration-500 ${alt ? "group-hover:opacity-0" : ""}`} />}
-        {alt && <Image src={cld(alt.url, 700)} alt={alt.altText || `${p.title} alternate view`} fill sizes="(max-width:768px) 50vw, 25vw" className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500" />}
+    <article
+      className="group relative bg-coal border border-platinum"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setPicker(false)}
+    >
+      <Link href={`/product/${p.slug}`} className="block relative aspect-[3/4] overflow-hidden bg-platinum/30">
+        {cover && (
+          <Image
+            src={cld(cover.url, 500)}
+            alt={cover.altText || p.title}
+            fill
+            priority={priority}
+            loading={priority ? undefined : "lazy"}
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className={`object-cover transition-opacity duration-300 ${imgLoaded ? "opacity-100" : "opacity-0"} ${alt && isHovered ? "group-hover:opacity-0" : ""}`}
+            onLoad={() => setImgLoaded(true)}
+          />
+        )}
+        {alt && isHovered && (
+          <Image
+            src={cld(alt.url, 500)}
+            alt={alt.altText || `${p.title} alternate view`}
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          />
+        )}
         <div className="absolute top-2 left-2 flex flex-col gap-1">{badges.map((b) => <span key={b} className="badge">{b}</span>)}</div>
       </Link>
       <div className="p-4 flex items-start justify-between gap-3">

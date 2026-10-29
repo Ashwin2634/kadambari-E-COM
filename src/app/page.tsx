@@ -26,8 +26,8 @@ export default async function Home() {
           <p className="mt-8 max-w-md text-ash leading-relaxed">Tuxedos, double-breasted suits, gothic blazers and velvet. Made after you order, in Italian wool, finished by hand.</p>
           <div className="mt-8 flex gap-3"><Link href="/shop" className="btn-primary">Shop the collection</Link><Link href="/track-order" className="btn-ghost">Track an order</Link></div>
         </div>
-        <div className="relative aspect-[4/5] bg-platinum border border-platinum">
-          {hero && <Image src={cld(hero, 1200)} alt={latest[0].title} fill priority sizes="(max-width:1024px) 100vw, 40vw" className="object-cover" />}
+        <div className="relative aspect-[4/5] bg-platinum/30 border border-platinum overflow-hidden">
+          {hero && <Image src={cld(hero, 900)} alt={latest[0].title} fill priority sizes="(max-width:1024px) 100vw, 45vw" className="object-cover" />}
         </div>
       </section>
 

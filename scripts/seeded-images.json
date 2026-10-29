@@ -1,0 +1,222 @@
+{
+  "obsidian-peak-tuxedo": [
+    {
+      "publicId": "obsidian-suits/products/product-1/apfh2rrsclgl3odimae5",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185032/obsidian-suits/products/product-1/apfh2rrsclgl3odimae5.webp",
+      "altText": "Product 1 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-1/gymm1tjjjw6irwfmwo9c",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185034/obsidian-suits/products/product-1/gymm1tjjjw6irwfmwo9c.webp",
+      "altText": "Product 1 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-1/nhvyjjbxslbvvslhopf7",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185035/obsidian-suits/products/product-1/nhvyjjbxslbvvslhopf7.jpg",
+      "altText": "Product 1 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-1/m1eyum8hd1vmm1pll2ds",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185037/obsidian-suits/products/product-1/m1eyum8hd1vmm1pll2ds.jpg",
+      "altText": "Product 1 view 4",
+      "isCover": false
+    }
+  ],
+  "midnight-double-breasted": [
+    {
+      "publicId": "obsidian-suits/products/product-2/gbmd2seajxxwtitnr7gw",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185039/obsidian-suits/products/product-2/gbmd2seajxxwtitnr7gw.webp",
+      "altText": "Product 2 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-2/qdqmopjlblikhxwgdayo",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185040/obsidian-suits/products/product-2/qdqmopjlblikhxwgdayo.webp",
+      "altText": "Product 2 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-2/heqgg3ah6mtedpnhwhwy",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185042/obsidian-suits/products/product-2/heqgg3ah6mtedpnhwhwy.webp",
+      "altText": "Product 2 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-2/pyubv93th6qslwxnhstj",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185043/obsidian-suits/products/product-2/pyubv93th6qslwxnhstj.webp",
+      "altText": "Product 2 view 4",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-2/ogks7pg2c5bjcpbc1mfz",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185045/obsidian-suits/products/product-2/ogks7pg2c5bjcpbc1mfz.webp",
+      "altText": "Product 2 view 5",
+      "isCover": false
+    }
+  ],
+  "requiem-gothic-blazer": [
+    {
+      "publicId": "obsidian-suits/products/product-3/kaimt51stshnhfajtuyo",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185046/obsidian-suits/products/product-3/kaimt51stshnhfajtuyo.webp",
+      "altText": "Product 3 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-3/uu9suno8qtr6nf27f3rk",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185048/obsidian-suits/products/product-3/uu9suno8qtr6nf27f3rk.webp",
+      "altText": "Product 3 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-3/am8sltkm50kfyd3opexv",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185049/obsidian-suits/products/product-3/am8sltkm50kfyd3opexv.webp",
+      "altText": "Product 3 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-3/yggy3qghzjjyohrxjnzd",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185051/obsidian-suits/products/product-3/yggy3qghzjjyohrxjnzd.webp",
+      "altText": "Product 3 view 4",
+      "isCover": false
+    }
+  ],
+  "crimson-velvet-suit": [
+    {
+      "publicId": "obsidian-suits/products/product-4/jmmjgbqvbwvdwyiqsg13",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185052/obsidian-suits/products/product-4/jmmjgbqvbwvdwyiqsg13.webp",
+      "altText": "Product 4 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-4/fb1helbw75qpxlp2oqet",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185053/obsidian-suits/products/product-4/fb1helbw75qpxlp2oqet.webp",
+      "altText": "Product 4 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-4/knwqmabdcpoif3esef6u",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185054/obsidian-suits/products/product-4/knwqmabdcpoif3esef6u.webp",
+      "altText": "Product 4 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-4/zwrpxycm42j459hnuez7",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185055/obsidian-suits/products/product-4/zwrpxycm42j459hnuez7.webp",
+      "altText": "Product 4 view 4",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-4/rsqxnmzfenqsqmntfugj",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185056/obsidian-suits/products/product-4/rsqxnmzfenqsqmntfugj.webp",
+      "altText": "Product 4 view 5",
+      "isCover": false
+    }
+  ],
+  "noir-shawl-tuxedo": [
+    {
+      "publicId": "obsidian-suits/products/product-5/wdxpxr5ph0xcot08sjju",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185057/obsidian-suits/products/product-5/wdxpxr5ph0xcot08sjju.jpg",
+      "altText": "Product 5 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-5/awfqccqfszdfbxfn3yip",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185058/obsidian-suits/products/product-5/awfqccqfszdfbxfn3yip.jpg",
+      "altText": "Product 5 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-5/k3udtkxbkt3jmm42vdm7",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185059/obsidian-suits/products/product-5/k3udtkxbkt3jmm42vdm7.jpg",
+      "altText": "Product 5 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-5/sbnocxwzpavvgfl1xese",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185060/obsidian-suits/products/product-5/sbnocxwzpavvgfl1xese.jpg",
+      "altText": "Product 5 view 4",
+      "isCover": false
+    }
+  ],
+  "slate-windsor-double-breasted": [
+    {
+      "publicId": "obsidian-suits/products/product-6/q51rr60yszesbqhnnap9",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185062/obsidian-suits/products/product-6/q51rr60yszesbqhnnap9.webp",
+      "altText": "Product 6 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-6/kgt5moy2nzc2ou45u6yb",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185064/obsidian-suits/products/product-6/kgt5moy2nzc2ou45u6yb.webp",
+      "altText": "Product 6 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-6/t9a6h2holi5tycctfdbx",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185065/obsidian-suits/products/product-6/t9a6h2holi5tycctfdbx.webp",
+      "altText": "Product 6 view 3",
+      "isCover": false
+    }
+  ],
+  "silk-lapel-pin": [
+    {
+      "publicId": "obsidian-suits/products/product-7/ahrwwy0ofrvr5h4ct3yb",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185066/obsidian-suits/products/product-7/ahrwwy0ofrvr5h4ct3yb.webp",
+      "altText": "Product 7 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-7/esbyks5ox1ursxw7tegi",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185068/obsidian-suits/products/product-7/esbyks5ox1ursxw7tegi.webp",
+      "altText": "Product 7 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-7/g2o2mqmrxw9arfidezcm",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185069/obsidian-suits/products/product-7/g2o2mqmrxw9arfidezcm.webp",
+      "altText": "Product 7 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-7/omsopcoikdwiaefiknld",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185070/obsidian-suits/products/product-7/omsopcoikdwiaefiknld.webp",
+      "altText": "Product 7 view 4",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-7/yf4wzgna9hditx6twonz",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185072/obsidian-suits/products/product-7/yf4wzgna9hditx6twonz.webp",
+      "altText": "Product 7 view 5",
+      "isCover": false
+    }
+  ],
+  "black-silk-tie": [
+    {
+      "publicId": "obsidian-suits/products/product-8/twmpihnm9tonw4ect8m3",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185073/obsidian-suits/products/product-8/twmpihnm9tonw4ect8m3.jpg",
+      "altText": "Product 8 view 1",
+      "isCover": true
+    },
+    {
+      "publicId": "obsidian-suits/products/product-8/yj8jkzoihu2gczmi8slg",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185074/obsidian-suits/products/product-8/yj8jkzoihu2gczmi8slg.webp",
+      "altText": "Product 8 view 2",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-8/mysbeofolwy85jpvrppq",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185075/obsidian-suits/products/product-8/mysbeofolwy85jpvrppq.jpg",
+      "altText": "Product 8 view 3",
+      "isCover": false
+    },
+    {
+      "publicId": "obsidian-suits/products/product-8/zorth3mbztd10gup095m",
+      "url": "https://res.cloudinary.com/bwyfe3hn/image/upload/v1793185077/obsidian-suits/products/product-8/zorth3mbztd10gup095m.jpg",
+      "altText": "Product 8 view 4",
+      "isCover": false
+    }
+  ]
+}

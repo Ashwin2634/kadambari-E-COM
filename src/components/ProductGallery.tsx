@@ -14,16 +14,16 @@ export default function ProductGallery({ images, title }: { images: any[]; title
       <div className="flex flex-col gap-3" role="tablist" aria-label="Product images">
         {images.map((im, i) => (
           <button key={i} role="tab" aria-selected={i === active} onClick={() => setActive(i)} className={`relative aspect-[3/4] border ${i === active ? "border-gold" : "border-platinum"}`}>
-            <Image src={cld(im.url, 160)} alt={im.altText || `${title} view ${i + 1}`} fill sizes="72px" className="object-cover" />
+            <Image src={cld(im.url, 150)} alt={im.altText || `${title} view ${i + 1}`} fill sizes="72px" className="object-cover" />
           </button>
         ))}
       </div>
       <div
-        className="relative aspect-[3/4] overflow-hidden bg-platinum cursor-zoom-in"
+        className="relative aspect-[3/4] overflow-hidden bg-platinum/30 cursor-zoom-in"
         onMouseMove={(e) => { const r = e.currentTarget.getBoundingClientRect(); setZoom({ x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 }); }}
         onMouseLeave={() => setZoom(null)}
       >
-        <Image src={cld(img.url, 1400)} alt={img.altText || title} fill priority sizes="(max-width:1024px) 80vw, 45vw"
+        <Image src={cld(img.url, 1000)} alt={img.altText || title} fill priority sizes="(max-width:1024px) 80vw, 45vw"
           className="object-cover transition-transform duration-150"
           style={zoom ? { transform: "scale(2)", transformOrigin: `${zoom.x}% ${zoom.y}%` } : undefined} />
       </div>

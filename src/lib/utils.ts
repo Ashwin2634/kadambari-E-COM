@@ -18,9 +18,10 @@ export function generateOrderId() {
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 /** Cloudinary delivery URL with auto format/quality and a width cap. */
-export function cld(url: string, w = 900) {
-  if (!url.includes("res.cloudinary.com")) return url;
-  return url.replace("/upload/", `/upload/f_auto,q_auto,c_limit,w_${w}/`);
+export function cld(url: string, w = 600) {
+  if (!url || !url.includes("res.cloudinary.com")) return url;
+  const clean = url.replace(/\/upload\/(?:[a-zA-Z0-9_,:]+\/)?/, "/upload/");
+  return clean.replace("/upload/", `/upload/f_auto,q_auto:good,c_limit,w_${w}/`);
 }
 
 /** Serialise Mongoose docs (ObjectId/Date) into plain JSON for client components. */

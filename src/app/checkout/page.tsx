@@ -102,7 +102,7 @@ export default function Checkout() {
         <ul className="space-y-4 mb-6">
           {lines.map((l) => (
             <li key={l.productId + l.color + l.size} className="flex gap-3 text-sm">
-              <div className="relative w-14 aspect-[3/4] bg-platinum shrink-0">{l.image && <Image src={cld(l.image, 150)} alt="" fill sizes="56px" className="object-cover" />}</div>
+              <div className="relative w-14 aspect-[3/4] bg-platinum shrink-0">{l.image && <Image src={l.image} alt="" fill sizes="56px" className="object-cover" />}</div>
               <div className="flex-1"><p>{l.title}</p><p className="text-ash">{l.color} · {l.size} · Qty {l.quantity}</p></div>
               <p>{formatINR(l.unitPrice * l.quantity)}</p>
             </li>

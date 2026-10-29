@@ -34,15 +34,29 @@ async function main() {
   const password = process.env.SEED_ADMIN_PASSWORD || "ChangeMe!2026";
   await User.findOneAndUpdate({ email }, { name: "Store Admin", email, role: "admin", passwordHash: await bcrypt.hash(password, 12) }, { upsert: true });
 
+  let seededImages: Record<string, any[]> = {};
+  try {
+    const fs = await import("fs");
+    const path = await import("path");
+    const manifestPath = path.resolve(__dirname, "seeded-images.json");
+    if (fs.existsSync(manifestPath)) {
+      seededImages = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+    }
+  } catch {}
+
   for (const [i, it] of items.entries()) {
-    const url = img(it.photo);
-    await Product.findOneAndUpdate({ slug: slug(it.title) }, {
-      title: it.title, slug: slug(it.title), sku: `OBS-${String(i + 1).padStart(3, "0")}`, category: it.category, fitType: it.fitType,
+    const itSlug = slug(it.title);
+    const productImages = seededImages[itSlug] || [
+      { publicId: "", url: img(it.photo), altText: it.title, isCover: true },
+      { publicId: "", url: img("photo-1490578474895-699cd4e2cf59"), altText: `${it.title} detail`, isCover: false }
+    ];
+    await Product.findOneAndUpdate({ slug: itSlug }, {
+      title: it.title, slug: itSlug, sku: `OBS-${String(i + 1).padStart(3, "0")}`, category: it.category, fitType: it.fitType,
       shortDescription: `${it.title}: ${it.fitType.toLowerCase()} cut in ${it.mat.toLowerCase()}.`,
       description: `Made to order and finished by hand.\n\nFabric: ${it.mat}. Fully canvassed jacket, working cuffs, half-lined interior.`,
       fabric: { material: it.mat, care: ["Dry Clean Only", "Do not tumble dry"] },
       pricing: { basePrice: it.price, salePrice: it.sale, isOnSale: !!it.sale, currency: "INR" },
-      variants: it.v, images: [{ publicId: "", url, altText: it.title, isCover: true }, { publicId: "", url: img("photo-1490578474895-699cd4e2cf59"), altText: `${it.title} detail`, isCover: false }],
+      variants: it.v, images: productImages,
       seo: { metaTitle: `${it.title} | Obsidian Suits`, metaDescription: `Buy the ${it.title}, a ${it.fitType.toLowerCase()} ${it.category.toLowerCase()} in ${it.mat}.`, keywords: [it.category, "luxury suit", "bespoke"] },
       tags: it.tags, isAvailable: true,
     }, { upsert: true });

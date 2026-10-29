@@ -50,7 +50,7 @@ export default function CartDrawer() {
               )}
               {lines.map((l) => (
                 <div key={l.productId + l.color + l.size} className="flex gap-4">
-                  <div className="relative w-20 aspect-[3/4] bg-platinum shrink-0">{l.image && <Image src={cld(l.image, 200)} alt={l.title} fill sizes="80px" className="object-cover" />}</div>
+                  <div className="relative w-20 aspect-[3/4] bg-platinum shrink-0">{l.image && <Image src={l.image} alt={l.title} fill sizes="80px" className="object-cover" />}</div>
                   <div className="flex-1 text-sm">
                     <Link href={`/product/${l.slug}`} onClick={() => setOpen(false)} className="font-medium hover:text-gold">{l.title}</Link>
                     <p className="text-ash">{l.color} · {l.size}</p>
